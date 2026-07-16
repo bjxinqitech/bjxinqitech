@@ -1,0 +1,49 @@
+# robots.txt for Beijing Xinqi Technology Co., Ltd.
+# https://bjxinqitech.com
+
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://bjxinqitech.com/sitemap.xml
+
+# Crawl-delay directive (optional, for polite crawlers)
+Crawl-delay: 10
+
+# Block access to sensitive directories (if any)
+# Disallow: /private/
+# Disallow: /admin/
+# Disallow: /tmp/
+
+# Block common non-essential files
+Disallow: *.log$
+Disallow: *.pdf$
+
+# Allow all major search engines
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+User-agent: Baiduspider
+Allow: /
+
+User-agent: YandexBot
+Allow: /
+
+# Block bad bots
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /

@@ -1,0 +1,8 @@
+# app-ads.txt for Beijing Xinqi Technology Co., Ltd.
+# Last Updated: December 15, 2024
+#
+# This file is used by advertising platforms to verify publisher identity
+# and ensure ad traffic authenticity. Include this file in your app's
+# developer console or website root.
+#
+# For mobile apps, this file should be configured in your AdMob/other ad network settings.

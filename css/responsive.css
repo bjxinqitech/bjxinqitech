@@ -1,0 +1,976 @@
+/* ============================================
+   Beijing Xinqi Technology Co., Ltd.
+   Responsive Styles
+   ============================================ */
+
+/* ============================================
+   LARGE DESKTOP (1400px and above)
+   ============================================ */
+@media screen and (min-width: 1400px) {
+    .container {
+        max-width: 1320px;
+    }
+    
+    .hero h1 {
+        font-size: 5rem;
+    }
+    
+    .services-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* ============================================
+   DESKTOP (1024px - 1399px)
+   ============================================ */
+@media screen and (max-width: 1399px) {
+    :root {
+        --spacing-unit: 18px;
+    }
+    
+    .footer-content {
+        grid-template-columns: 2fr 1fr 1fr;
+    }
+    
+    .about-grid {
+        gap: calc(var(--spacing-unit) * 3);
+    }
+}
+
+/* ============================================
+   TABLET LANDSCAPE (992px - 1023px)
+   ============================================ */
+@media screen and (max-width: 1023px) {
+    :root {
+        --spacing-unit: 16px;
+    }
+    
+    /* Navigation */
+    .nav-list {
+        display: none;
+    }
+    
+    .mobile-menu-btn {
+        display: flex;
+    }
+    
+    /* Hero */
+    .hero {
+        min-height: 600px;
+    }
+    
+    .hero h1 {
+        font-size: 3rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1.1rem;
+    }
+    
+    /* About */
+    .about-grid {
+        grid-template-columns: 1fr;
+        gap: calc(var(--spacing-unit) * 3);
+    }
+    
+    .about-stats {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    /* App Showcase */
+    .app-showcase {
+        grid-template-columns: 1fr;
+        gap: calc(var(--spacing-unit) * 3);
+    }
+    
+    .app-preview {
+        order: -1;
+    }
+    
+    .phone-mockup {
+        width: 260px;
+        height: 520px;
+    }
+    
+    /* Contact */
+    .contact-wrapper {
+        grid-template-columns: 1fr;
+    }
+    
+    /* Footer */
+    .footer-content {
+        grid-template-columns: 1fr 1fr;
+        gap: calc(var(--spacing-unit) * 2);
+    }
+    
+    .footer-about {
+        grid-column: span 2;
+    }
+    
+    /* Timeline */
+    .timeline::before {
+        left: 20px;
+    }
+    
+    .timeline-item {
+        width: 100%;
+        padding-left: 50px;
+        padding-right: 0;
+        text-align: left;
+    }
+    
+    .timeline-item:nth-child(even) {
+        margin-left: 0;
+    }
+    
+    .timeline-dot {
+        left: 12px !important;
+        right: auto !important;
+    }
+    
+    .timeline-item:nth-child(odd) {
+        padding-right: 0;
+        text-align: left;
+    }
+}
+
+/* ============================================
+   TABLET PORTRAIT (768px - 991px)
+   ============================================ */
+@media screen and (max-width: 991px) {
+    :root {
+        --spacing-unit: 15px;
+    }
+    
+    /* Sections */
+    .section {
+        padding: calc(var(--spacing-unit) * 5) 0;
+    }
+    
+    /* Services Grid */
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: calc(var(--spacing-unit) * 1.5);
+    }
+    
+    /* Features Grid */
+    .features-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: calc(var(--spacing-unit) * 2);
+    }
+    
+    /* News Grid */
+    .news-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    /* Culture Grid */
+    .culture-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    /* Ads Platforms */
+    .ads-platforms {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    /* About Stats */
+    .about-stats {
+        grid-template-columns: repeat(3, 1fr);
+        gap: calc(var(--spacing-unit) * 1.5);
+    }
+    
+    .stat-number {
+        font-size: 2.5rem;
+    }
+    
+    /* Footer */
+    .footer-content {
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    .footer-about {
+        grid-column: span 2;
+    }
+    
+    /* Page Header */
+    .page-header {
+        min-height: 350px;
+    }
+}
+
+/* ============================================
+   MOBILE LANDSCAPE (600px - 767px)
+   ============================================ */
+@media screen and (max-width: 767px) {
+    :root {
+        --spacing-unit: 14px;
+    }
+    
+    /* Typography */
+    h1 {
+        font-size: clamp(2rem, 6vw, 3rem);
+    }
+    
+    h2 {
+        font-size: clamp(1.5rem, 4vw, 2rem);
+    }
+    
+    h3 {
+        font-size: 1.3rem;
+    }
+    
+    p {
+        font-size: 1rem;
+    }
+    
+    /* Header */
+    .header {
+        padding: calc(var(--spacing-unit) * 1) 0;
+    }
+    
+    .logo svg {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .logo-text {
+        font-size: 1rem;
+    }
+    
+    /* Hero */
+    .hero {
+        min-height: 500px;
+    }
+    
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1rem;
+    }
+    
+    .hero-badge {
+        padding: 8px 20px;
+        font-size: 0.7rem;
+    }
+    
+    .hero-cta {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .btn {
+        padding: 15px 35px;
+        font-size: 0.85rem;
+        width: 100%;
+        max-width: 280px;
+    }
+    
+    .scroll-indicator {
+        bottom: 30px;
+    }
+    
+    /* Services */
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .service-card {
+        padding: calc(var(--spacing-unit) * 2);
+    }
+    
+    .service-icon {
+        width: 60px;
+        height: 60px;
+    }
+    
+    /* Features */
+    .features-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .feature-icon {
+        width: 70px;
+        height: 70px;
+    }
+    
+    /* News */
+    .news-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .news-image {
+        height: 180px;
+    }
+    
+    /* Culture */
+    .culture-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .culture-icon {
+        width: 80px;
+        height: 80px;
+    }
+    
+    /* App Showcase */
+    .phone-mockup {
+        width: 220px;
+        height: 440px;
+        border-radius: 30px;
+    }
+    
+    .phone-mockup::before {
+        width: 60px;
+        height: 20px;
+        top: 18px;
+    }
+    
+    .phone-screen {
+        border-radius: 22px;
+    }
+    
+    /* Ads Platforms */
+    .ads-platforms {
+        grid-template-columns: repeat(2, 1fr);
+        gap: var(--spacing-unit);
+    }
+    
+    .ad-platform {
+        padding: calc(var(--spacing-unit) * 1.5);
+    }
+    
+    .ad-platform-icon {
+        width: 50px;
+        height: 50px;
+    }
+    
+    /* About */
+    .about-stats {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-unit);
+    }
+    
+    .stat-item {
+        padding: calc(var(--spacing-unit) * 1);
+    }
+    
+    .stat-number {
+        font-size: 2rem;
+    }
+    
+    /* Contact */
+    .contact-wrapper {
+        gap: calc(var(--spacing-unit) * 2);
+    }
+    
+    .contact-info,
+    .contact-form {
+        padding: calc(var(--spacing-unit) * 2);
+    }
+    
+    /* Footer */
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: calc(var(--spacing-unit) * 2);
+    }
+    
+    .footer-about {
+        grid-column: auto;
+    }
+    
+    .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .footer-legal {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    /* Page Header */
+    .page-header {
+        min-height: 300px;
+        padding-top: 80px;
+    }
+    
+    .page-header h1 {
+        font-size: 2rem;
+    }
+    
+    .breadcrumb {
+        flex-wrap: wrap;
+        font-size: 0.8rem;
+    }
+    
+    /* Legal Content */
+    .legal-content {
+        padding: calc(var(--spacing-unit) * 3) 0;
+    }
+    
+    .legal-content h2 {
+        font-size: 1.4rem;
+    }
+    
+    .legal-content h3 {
+        font-size: 1.1rem;
+    }
+    
+    .legal-content p {
+        font-size: 0.95rem;
+    }
+    
+    /* Timeline */
+    .timeline {
+        padding-left: 20px;
+    }
+    
+    .timeline::before {
+        left: 10px;
+    }
+    
+    .timeline-dot {
+        width: 12px;
+        height: 12px;
+        left: 2px !important;
+    }
+    
+    .timeline-year {
+        font-size: 1.5rem;
+    }
+    
+    /* Particles */
+    .particle {
+        width: 3px;
+        height: 3px;
+    }
+}
+
+/* ============================================
+   MOBILE PORTRAIT (320px - 599px)
+   ============================================ */
+@media screen and (max-width: 599px) {
+    :root {
+        --spacing-unit: 12px;
+    }
+    
+    /* Container */
+    .container {
+        padding: 0 calc(var(--spacing-unit) * 1.5);
+    }
+    
+    /* Typography */
+    h1 {
+        font-size: clamp(1.8rem, 7vw, 2.5rem);
+    }
+    
+    h2 {
+        font-size: clamp(1.3rem, 5vw, 1.8rem);
+    }
+    
+    p {
+        font-size: 0.95rem;
+        line-height: 1.7;
+    }
+    
+    /* Header */
+    .header {
+        padding: calc(var(--spacing-unit) * 0.8) 0;
+    }
+    
+    .logo svg {
+        width: 35px;
+        height: 35px;
+    }
+    
+    .logo-text {
+        font-size: 0.9rem;
+    }
+    
+    .logo-text span {
+        font-size: 0.6rem;
+    }
+    
+    .mobile-menu-btn {
+        padding: 8px;
+    }
+    
+    .mobile-menu-btn span {
+        width: 25px;
+        height: 2px;
+    }
+    
+    /* Hero */
+    .hero {
+        min-height: 100vh;
+    }
+    
+    .hero-content {
+        padding: 0 15px;
+    }
+    
+    .hero-badge {
+        padding: 6px 15px;
+        font-size: 0.65rem;
+        letter-spacing: 0.2em;
+    }
+    
+    .hero h1 {
+        font-size: 2rem;
+        margin-bottom: calc(var(--spacing-unit) * 1.5);
+    }
+    
+    .hero-subtitle {
+        font-size: 0.9rem;
+        margin-bottom: calc(var(--spacing-unit) * 2);
+    }
+    
+    .btn {
+        padding: 12px 25px;
+        font-size: 0.8rem;
+    }
+    
+    .scroll-indicator {
+        bottom: 20px;
+        font-size: 0.7rem;
+    }
+    
+    .scroll-indicator svg {
+        width: 24px;
+        height: 24px;
+    }
+    
+    /* Section Title */
+    .section-title {
+        margin-bottom: calc(var(--spacing-unit) * 3);
+    }
+    
+    .section-title .subtitle {
+        font-size: 0.75rem;
+        letter-spacing: 0.2em;
+    }
+    
+    /* Services */
+    .section {
+        padding: calc(var(--spacing-unit) * 4) 0;
+    }
+    
+    .service-card {
+        padding: calc(var(--spacing-unit) * 1.5);
+    }
+    
+    .service-icon {
+        width: 50px;
+        height: 50px;
+        margin-bottom: calc(var(--spacing-unit) * 1.5);
+    }
+    
+    .service-card h3 {
+        font-size: 1.2rem;
+        margin-bottom: calc(var(--spacing-unit) * 0.8);
+    }
+    
+    /* Features */
+    .feature-icon {
+        width: 60px;
+        height: 60px;
+    }
+    
+    .feature-icon svg {
+        width: 30px;
+        height: 30px;
+    }
+    
+    /* News */
+    .news-image {
+        height: 150px;
+    }
+    
+    .news-image svg {
+        width: 60px;
+        height: 60px;
+    }
+    
+    .news-content {
+        padding: calc(var(--spacing-unit) * 1.5);
+    }
+    
+    .news-card h3 {
+        font-size: 1.1rem;
+    }
+    
+    .news-date {
+        font-size: 0.75rem;
+    }
+    
+    /* Culture */
+    .culture-card {
+        padding: calc(var(--spacing-unit) * 2);
+    }
+    
+    .culture-icon {
+        width: 70px;
+        height: 70px;
+    }
+    
+    /* App Showcase */
+    .app-content h2 {
+        font-size: 1.5rem;
+    }
+    
+    .phone-mockup {
+        width: 180px;
+        height: 360px;
+        border-radius: 25px;
+        padding: 10px;
+    }
+    
+    .phone-mockup::before {
+        width: 50px;
+        height: 16px;
+        top: 14px;
+    }
+    
+    .phone-screen {
+        border-radius: 18px;
+    }
+    
+    .store-buttons {
+        flex-direction: column;
+    }
+    
+    .store-btn {
+        width: 100%;
+        justify-content: center;
+    }
+    
+    /* Ads Platforms */
+    .ads-platforms {
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    .ad-platform {
+        padding: var(--spacing-unit);
+    }
+    
+    .ad-platform-icon {
+        width: 45px;
+        height: 45px;
+    }
+    
+    .ad-platform-icon svg {
+        width: 24px;
+        height: 24px;
+    }
+    
+    .ad-platform h4 {
+        font-size: 0.9rem;
+    }
+    
+    .ad-platform p {
+        font-size: 0.75rem;
+    }
+    
+    /* About */
+    .about-stats {
+        grid-template-columns: 1fr;
+    }
+    
+    .stat-number {
+        font-size: 2rem;
+    }
+    
+    .stat-label {
+        font-size: 0.75rem;
+    }
+    
+    /* Contact */
+    .contact-info h3,
+    .contact-form h3 {
+        font-size: 1.2rem;
+    }
+    
+    .form-group input,
+    .form-group textarea {
+        padding: 12px;
+        font-size: 0.95rem;
+    }
+    
+    .form-group textarea {
+        min-height: 120px;
+    }
+    
+    /* Footer */
+    .footer {
+        padding: calc(var(--spacing-unit) * 3) 0 calc(var(--spacing-unit) * 1.5);
+    }
+    
+    .footer-links h4 {
+        font-size: 1rem;
+    }
+    
+    .footer-links a {
+        font-size: 0.85rem;
+    }
+    
+    .footer-bottom p {
+        font-size: 0.8rem;
+    }
+    
+    /* Page Header */
+    .page-header {
+        min-height: 250px;
+        padding-top: 70px;
+    }
+    
+    .page-header h1 {
+        font-size: 1.8rem;
+    }
+    
+    .breadcrumb {
+        font-size: 0.7rem;
+        gap: 10px;
+    }
+    
+    /* Legal Content */
+    .legal-content {
+        padding: calc(var(--spacing-unit) * 2) 0;
+    }
+    
+    .legal-content h2 {
+        font-size: 1.3rem;
+        margin-top: calc(var(--spacing-unit) * 2);
+    }
+    
+    .legal-content h3 {
+        font-size: 1rem;
+    }
+    
+    .legal-content p {
+        font-size: 0.9rem;
+    }
+    
+    .legal-content ul {
+        padding-left: calc(var(--spacing-unit) * 1.5);
+    }
+    
+    .legal-content ul li {
+        font-size: 0.9rem;
+    }
+    
+    /* Timeline */
+    .timeline-year {
+        font-size: 1.3rem;
+    }
+    
+    .timeline-item h4 {
+        font-size: 1rem;
+    }
+    
+    .timeline-item p {
+        font-size: 0.85rem;
+    }
+    
+    /* Modal */
+    .modal-content {
+        max-width: 95%;
+        padding: 15px;
+    }
+}
+
+/* ============================================
+   VERY SMALL SCREENS (below 320px)
+   ============================================ */
+@media screen and (max-width: 349px) {
+    :root {
+        --spacing-unit: 10px;
+    }
+    
+    h1 {
+        font-size: 1.5rem;
+    }
+    
+    h2 {
+        font-size: 1.2rem;
+    }
+    
+    .hero h1 {
+        font-size: 1.8rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 0.85rem;
+    }
+    
+    .btn {
+        padding: 10px 20px;
+        font-size: 0.75rem;
+    }
+    
+    .phone-mockup {
+        width: 160px;
+        height: 320px;
+    }
+}
+
+/* ============================================
+   HIGH DPI DISPLAYS
+   ============================================ */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    /* Sharper text rendering */
+    body {
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+    
+    /* Crisp borders */
+    .service-card,
+    .news-card,
+    .culture-card {
+        border-width: 1px;
+    }
+}
+
+/* ============================================
+   REDUCED MOTION
+   ============================================ */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+    
+    html {
+        scroll-behavior: auto;
+    }
+    
+    .particle {
+        animation: none;
+    }
+    
+    .scroll-indicator svg {
+        animation: none;
+    }
+}
+
+/* ============================================
+   DARK MODE (system preference)
+   ============================================ */
+@media (prefers-color-scheme: dark) {
+    /* Already dark by default, but ensuring consistency */
+    :root {
+        --color-black: #0a0a0a;
+        --color-black-light: #1a1a1a;
+        --color-black-lighter: #2a2a2a;
+    }
+}
+
+/* ============================================
+   PRINT STYLES
+   ============================================ */
+@media print {
+    .header,
+    .footer,
+    .scroll-indicator,
+    .mobile-menu-btn,
+    .hero-cta,
+    .btn,
+    .form-group,
+    .contact-form,
+    .store-buttons {
+        display: none !important;
+    }
+    
+    body {
+        background: white;
+        color: black;
+    }
+    
+    .hero {
+        height: auto;
+        min-height: auto;
+        padding: 50px 0;
+    }
+    
+    .section {
+        padding: 30px 0;
+    }
+    
+    h1, h2, h3, h4, h5, h6 {
+        color: black;
+    }
+    
+    p {
+        color: #333;
+    }
+    
+    .service-card,
+    .news-card,
+    .culture-card {
+        border: 1px solid #ccc;
+        background: white;
+    }
+}
+
+/* ============================================
+   ACCESSIBILITY
+   ============================================ */
+
+/* Focus styles for keyboard navigation */
+a:focus,
+button:focus,
+input:focus,
+textarea:focus {
+    outline: 2px solid var(--color-primary);
+    outline-offset: 2px;
+}
+
+/* Skip to content link */
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background: var(--color-primary);
+    color: var(--color-black);
+    padding: 10px 20px;
+    z-index: 10000;
+    transition: top 0.3s ease;
+}
+
+.skip-link:focus {
+    top: 0;
+}
+
+/* Screen reader only */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+/* Larger touch targets for mobile */
+@media (hover: none) and (pointer: coarse) {
+    .nav-item a,
+    .btn,
+    .service-card,
+    .news-card,
+    .culture-card {
+        min-height: 44px;
+    }
+    
+    .contact-item {
+        min-height: 44px;
+    }
+}
